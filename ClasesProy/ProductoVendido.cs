@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace ProyFinal_Clases
 {
+    //CLASE PRODUCTOVENDIDO
     public class ProductoVendido
     {
-        private int _ID;
+        #region Atributos
+        private int _id;
         private int _idProducto;
-        private int _Stock;
+        private int _stock;
         private int _idVenta;
+        #endregion
+        #region Constructores
+        public ProductoVendido(int id, int idProducto, int stock, int idVenta)
+            {
+                this._id = id;
+                this._idProducto = idProducto;
+                this._stock = stock;
+                this._idVenta = idVenta;
 
-        public ProductoVendido(int idProductoVendido, int idProducto, int Stock, int idVenta)
-        {
-            this._ID = idProductoVendido;
-            this._idProducto = idProducto;
-            this._Stock = Stock;
-            this._idVenta = idVenta;
-
-        }
+            }
+        #endregion
     }
 }

@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace ProyFinal_Clases
 {
+    //CLASE PRODUCTO
     public class Producto
     {
-        private int _ID;
-        private string _Descripicion;
-        private decimal _Costo;
-        private decimal _PrecioVenta;
-        private int _Stock;
-        private int _IDUsuario;
-
-        public Producto(int idProducto, string Descripicion, decimal Costo, decimal PrecioVenta, int Stock, int IDUsuario)
-        {
-            this._ID = idProducto;
-            this._Descripicion = Descripicion;
-            this._Costo = Costo;
-            this._PrecioVenta = PrecioVenta;
-            this._Stock = Stock;
-            this._IDUsuario = IDUsuario;    
-        }
-
+        #region Atributos
+        private int _id;
+        private string _descripicion;
+        private decimal _costo;
+        private decimal _precioVenta;
+        private int _stock;
+        private int _idUsuario;
+        #endregion
+        #region Constructores
+        public Producto(int id, string descripicion, decimal costo, decimal precioVenta, int stock, int idUsuario)
+            {
+                this._id = id;
+                this._descripicion = descripicion;
+                this._costo = costo;
+                this._precioVenta = precioVenta;
+                this._stock = stock;
+                this._idUsuario = idUsuario;    
+            }
+        #endregion
     }
 }

@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace ProyFinal_Clases
 {
+    //CLASE USUARIO
     public class Usuario
     {
-        private int _ID;
-        private string _Nombre;
-        private string _Apellido;
-        private string _NombreUsuario;
-        private string _Contraseña;
-        private string _Mail;
-
-        public Usuario(int idUsuario, string Nombre, string Apellido, string NombreUsuario, string Contraseña, string Mail )
-        {
-            this._ID = idUsuario;
-            this._Nombre = Nombre;
-            this._Apellido = Apellido;
-            this._NombreUsuario = NombreUsuario;
-            this._Contraseña = Contraseña;
-            this._Mail = Mail;
-        }
-
+        #region Atributos
+        private int _id;
+        private string _nombre;
+        private string _apellido;
+        private string _nombreUsuario;
+        private string _contraseña;
+        private string _mail;
+        #endregion
+        #region Constructores
+        public Usuario(int id, string nombre, string apellido, string nombreUsuario, string contraseña, string mail )
+            {
+                this._id = id;
+                this._nombre = nombre;
+                this._apellido = apellido;
+                this._nombreUsuario = nombreUsuario;
+                this._contraseña = contraseña;
+                this._mail = mail;
+            }
+        #endregion
     }
 }

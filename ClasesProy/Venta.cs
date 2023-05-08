@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace ProyFinal_Clases
 {
+    //CLASE VENTA
     public class Venta
     {
-        private int _ID;
-        private string _Comentarios;
-        private int _IDUsuario;
+        #region Atributos
+        private int _id;
+        private string _comentarios;
+        private int _idUsuario;
+        #endregion
+        #region Constructores
+        public Venta(int id, string comentarios, int idUsuario)
+            {
+                this._id = id;
+                this._comentarios = comentarios;
+                this._idUsuario = idUsuario;
 
-        public Venta(int idVenta, string Comentarios, int IDUsuario)
-        {
-            this._ID = idVenta;
-            this._Comentarios = Comentarios;
-            this._IDUsuario = IDUsuario;
-
-        }
+            }
+        #endregion
     }
 }
