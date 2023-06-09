@@ -22,8 +22,23 @@ namespace ProyFinal_Clases
                 this._idProducto = idProducto;
                 this._stock = stock;
                 this._idVenta = idVenta;
+            // Mensaje de creacion de la instancia de ProductoVendido
+            Console.WriteLine("La instancia de ProductoVendido se ha creado satisfactoriamente.");
+        }
 
-            }
+        // Constructor por defecto
+        public ProductoVendido()
+        {
+            // Mensaje de creacion de la instancia de ProductoVendido
+            Console.WriteLine("La instancia de ProductoVendido se ha creado satisfactoriamente.");
+        }
+        #endregion
+        #region Propiedades
+        public int Id { get; set; } // Identificador unico del producto vendido
+        public int IdProducto { get; set; } // Identificador del producto que se vendio
+        public int Stock { get; set; } // Cantidad del producto que se vendio
+        public int IdVenta { get; set; } // Identificador de la venta a la que pertenece el producto vendido
+        
         #endregion
     }
 }

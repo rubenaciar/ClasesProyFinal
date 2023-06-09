@@ -15,13 +15,27 @@ namespace ProyFinal_Clases
         private int _idUsuario;
         #endregion
         #region Constructores
+        // Constructor por defecto
+        public Venta()
+        {
+            
+            // Mensaje de creacion de la instancia de Venta
+            Console.WriteLine("La instancia de Venta se ha creado satisfactoriamente.");
+        }
         public Venta(int id, string comentarios, int idUsuario)
             {
                 this._id = id;
                 this._comentarios = comentarios;
                 this._idUsuario = idUsuario;
-
-            }
+            // Mensaje de creacion de la instancia de Venta
+            Console.WriteLine("La instancia de Venta se ha creado satisfactoriamente.");
+        }
+        #endregion
+        #region Propiedades
+        public int Id { get; set; } // Identificador unico de la venta
+        public string Comentarios { get; set; } // Descripcion o comentarios de la venta
+        public int IdUsuario { get; set; } // Identificador del usuario que realizo la venta
+      
         #endregion
     }
 }
